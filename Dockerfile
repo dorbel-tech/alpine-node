@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:6
+FROM mhart/alpine-node:6.9.4
 
 RUN apk add --no-cache git bash wget curl nano
 RUN npm install --global yarn --no-progress
