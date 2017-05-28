@@ -2,4 +2,7 @@
 
 The repository is located here: https://hub.docker.com/r/dorbel/alpine-node/
 
-To push new image: https://docs.docker.com/engine/getstarted/step_six/
+To push new image:
+```
+$ docker push dorbel/alpine-node
+```
