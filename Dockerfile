@@ -1,7 +1,13 @@
-FROM mhart/alpine-node:6.10.3
+FROM mhart/alpine-node:8.2.1
 
-RUN apk add --no-cache git bash wget curl nano
-RUN npm install --global yarn@v0.24.5 --no-progress
+RUN apk add --no-cache git bash wget curl nano python make g++
 
 RUN rm -rf /tmp/* /var/cache/apk/*
-RUN npm cache clean
+RUN npm cache clean --force
+
+# Working directory environment variable.
+ENV WORKDIR="/home/nodejs/app/"
+
+# Create working directory in container.
+RUN mkdir -p $WORKDIR
+WORKDIR $WORKDIR
