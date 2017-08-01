@@ -5,7 +5,7 @@
 * The repository is located here: https://hub.docker.com/r/dorbel/alpine-node/
 
 ## Docker hub authentication
-* You will a Docker Hub (https://hub.docker.com/) user and password, and also be granted permissions to the dorbel/alpine-node image.
+* You will need a Docker Hub (https://hub.docker.com/) user and password, and also be granted permissions to the dorbel/alpine-node image.
 * Setup your local Docker cli using ``$ docker login --username=YOUR_USERNAME``. You will be prompted for the password (same one you use in the website).
 
 ## To push a new version:
